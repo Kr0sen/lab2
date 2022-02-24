@@ -66,13 +66,12 @@
                 return this.Number.CompareTo(((RomanNumber)obj).Number);
             throw new RomanNumberException("CompareTo: obj is null or not RomanNumber.");
         }
-        private static int Arr_Size = 19;
+        private static int Arr_Size = 13;
         private static string[] Romans =
-            { "_L", "_L_X", "_X", "_X_V",
-            "_V", "_VM", "M", "CM", "D", "CD", "C", "XC", "L",
+            { "M", "CM", "D", "CD", "C", "XC", "L",
             "XL", "X", "IX", "V", "IV", "I" };
         private static ushort[] Values =
-            { 50000, 40000, 10000, 9000, 5000, 4000, 1000, 900, 500,
+            {1000, 900, 500,
             400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
         private ushort Number;
         private string RomanString;

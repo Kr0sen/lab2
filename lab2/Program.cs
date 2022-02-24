@@ -30,14 +30,14 @@ namespace lab2
             }
             Console.WriteLine("");
 
-            // n1: _X_XMMMCDLVI 
-            // n2: _VCXXIII
+            // n1: MMMMMMMMMMMMMMMMMMMMMMMCDLVI
+            // n2: MMMMMCXXIII
             Console.WriteLine("n1: {0}\nn2: {1}", (n1).ToString(), (n2).ToString());
 
-            // n1+n2: _X_X_VMMMDLXXIX
+            // n1+n2: MMMMMMMMMMMMMMMMMMMMMMMMMMMMDLXXIX
             Console.WriteLine("n1+n2: {0}", (RomanNumber.Add(n1, n2)).ToString());
 
-            // n1-n2: _X_VMMMCCCXXXIII
+            // n1-n2: MMMMMMMMMMMMMMMMMMCCCXXXIII
             Console.WriteLine("n1-n2: {0}", (RomanNumber.Sub(n1, n2)).ToString());
 
             // n1/n2: IV
@@ -55,7 +55,7 @@ namespace lab2
             {
                 n1 = new RomanNumber(2509);
                 n2 = new RomanNumber(5);
-                // n1*n2: _XMMDXLV
+                // n1*n2: MMMMMMMMMMMMDXLV
                 Console.WriteLine("2509*5: {0}", (RomanNumber.Mul(n1, n2)).ToString());
             }
         }
